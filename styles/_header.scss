@@ -1,0 +1,10 @@
+.b-header {
+    &__nav{
+        background-color: var(--color-header);
+    }
+
+    &__logo {
+        width: 20px;
+        height: 20px;
+    }
+}
