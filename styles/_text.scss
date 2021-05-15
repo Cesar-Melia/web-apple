@@ -2,6 +2,72 @@ body {
     font-family: sf-pro;
 }
 
+.b-text-h2 {
+    font-weight: 700;
+    color: var(--color-text);
+    text-align: center;
+    font-size: 32px;
+    margin: 36px 40px 5px 40px;
+
+    ~ h2 {
+        margin: 0 40px 5px 40px;
+    }
+
+    @media (min-width:768px) { 
+        font-size: 48px;
+        margin-top: 66px;
+    }
+
+    &--white {
+        color: var(--color-old-white);
+    }
+
+    &--top36 {
+        font-size: 30px;
+        margin: 36px 40px 0 40px;
+    }
+    
+    &--top10 {
+        font-size: 30px;
+        margin: 10px 40px 0 40px;
+    }
+}
+
+.b-text-h3 {
+    font-weight: 400;
+    color: var(--color-text);
+    text-align: center;
+    font-size: 18px;
+    margin: 0 40px 0 40px;
+
+    @media (min-width:768px) { 
+        font-size: 23px;
+        margin-top: 0;
+    }
+
+    &--white {
+        color: var(--color-old-white);
+    }
+
+    &--collection {
+        font-size: 19px;
+        margin: 5px 10px 0 10px;
+
+        @media (min-width:1069px) { 
+            font-size: 21px;
+        }
+    }
+
+    &--trade {
+        font-size: 18px;
+        margin: 5px 10px 0 10px;
+
+        @media (min-width:1069px) { 
+            font-size: 21px;
+        }
+    }
+}
+
 .b-text-span {
     color: var(--color-text);
     font-size: 14px;
@@ -13,6 +79,12 @@ body {
 
     &--gray {
         color: var(--color-gray);
+    }
+    
+    &--red {
+        color: var(--color-red);
+        font-size: 12px;
+        margin-top: 15px;
     }
 
     &--under-header{
@@ -34,18 +106,7 @@ body {
             font-size: 16px;
             margin-top: 20px;
         }
-    
-    &--red {
-        color: var(--color-red);
-    }
-
-    }
-
-    
-
-
-
-
+    }   
 }
 
 .b-text-link {
@@ -68,56 +129,5 @@ body {
 
     &--bright-blue {
         color: var(--color-blue-link2);
-    }
-}
-
-.b-text-h2 {
-    font-weight: 700;
-    color: var(--color-text);
-    text-align: center;
-    font-size: 32px;
-    margin: 36px 40px 5px 40px;
-
-    @media (min-width:768px) { 
-        font-size: 48px;
-        margin-top: 66px;
-    }
-
-    &--white {
-        color: var(--color-old-white);
-    }
-
-    &--collection {
-        font-size: 30px;
-        margin: 36px 40px 5px 40px;
-    }
-
-    
-}
-
-.b-text-h3 {
-    font-weight: 400;
-    color: var(--color-text);
-    text-align: center;
-    font-size: 18px;
-    margin: 0 40px 0 40px;
-
-    @media (min-width:768px) { 
-        font-size: 23px;
-        margin-top: 0;
-    }
-
-    &--white {
-        color: var(--color-old-white);
-    }
-
-    &--collection {
-        font-size: 19px;
-        margin: 0 10px 0 10px;
-
-        @media (min-width:1069px) { 
-            font-size: 21px;
-            
-        }
     }
 }

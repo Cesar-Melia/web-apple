@@ -63,7 +63,6 @@
         @media (min-width:768px) { 
             margin-left: 12px;
         }
-        
     }
 
     &__watch {
@@ -72,6 +71,21 @@
             margin-right: 12px;
         }
     }
+
+    &__tv {
+        @include background-collection("images/tv_4k_mv.jpg", "images/tv_4k_tab.jpg", "images/tv_4k_desk.jpg");
+        @media (min-width:768px) { 
+            margin-left: 12px;
+        }
+    }
+
+    &__trade {
+        @include background-collection("images/promo_tradein_mv.jpg", "images/promo_tradein_tab.jpg", "images/promo_tradein_desk.jpg");
+        @media (min-width:768px) { 
+            margin-right: 12px;
+        }
+    }
+
 
     &__link {
         text-decoration: none;
