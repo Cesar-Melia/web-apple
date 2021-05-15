@@ -54,10 +54,6 @@
         @include background("images/hero_imac_mv.jpg", "images/hero_imac.jpg");
     }
 
-    &__collection {
-        
-    }
-
     &__iphone-pro {
         @include background-collection("images/iphone_12_pro_mv.jpg", "images/iphone_12_pro_tab.jpg", "images/iphone_12_pro.jpg");
         @media (min-width:768px) { 
@@ -86,6 +82,19 @@
         }
     }
 
+    &__card {
+        @include background-collection("images/card_mv.jpg", "images/card_tab.jpg", "images/card_desk.jpg");
+        @media (min-width:768px) { 
+            margin-left: 12px;
+        }
+    }
+
+    &__fitness {
+        @include background-collection("images/Fitness_mv.jpg", "images/Fitness_tab.jpg", "images/Fitness_desk.jpg");
+        @media (min-width:768px) { 
+            margin-right: 12px;
+        }
+    }
 
     &__link {
         text-decoration: none;

@@ -423,11 +423,27 @@ template {
 }
 
 .b-logo-tv {
-  width: 110px;
+  width: 90px;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   margin-top: 10px;
+}
+
+.b-logo-card {
+  width: 100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 40px 0 6px 0;
+}
+
+.b-logo-fitness {
+  width: 138px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 40px 0 6px 0;
 }
 
 body {
@@ -798,6 +814,68 @@ body {
 
 @media (min-width: 768px) {
   .b-main__trade {
+    margin-right: 12px;
+  }
+}
+
+.b-main__card {
+  width: auto;
+  height: 520px;
+  margin-bottom: 12px;
+  background-size: auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-image: url("images/card_mv.jpg");
+  background-color: var(--color-old-white);
+}
+
+@media (min-width: 768px) {
+  .b-main__card {
+    height: 490px;
+    background-image: url("images/card_tab.jpg");
+  }
+}
+
+@media (min-width: 1068px) {
+  .b-main__card {
+    height: 580px;
+    background-image: url("images/card_desk.jpg");
+  }
+}
+
+@media (min-width: 768px) {
+  .b-main__card {
+    margin-left: 12px;
+  }
+}
+
+.b-main__fitness {
+  width: auto;
+  height: 520px;
+  margin-bottom: 12px;
+  background-size: auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-image: url("images/Fitness_mv.jpg");
+  background-color: var(--color-old-white);
+}
+
+@media (min-width: 768px) {
+  .b-main__fitness {
+    height: 490px;
+    background-image: url("images/Fitness_tab.jpg");
+  }
+}
+
+@media (min-width: 1068px) {
+  .b-main__fitness {
+    height: 580px;
+    background-image: url("images/Fitness_desk.jpg");
+  }
+}
+
+@media (min-width: 768px) {
+  .b-main__fitness {
     margin-right: 12px;
   }
 }
