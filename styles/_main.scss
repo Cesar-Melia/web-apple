@@ -1,102 +1,129 @@
 @mixin background($img_mv, $img_desk) {
-    width: 100%;
-    height: 518px;
-    margin-bottom: 12px;;
-    background-size: auto;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-image: url($img_mv);
-    background-color: var(--color-old-white);
+  width: 100%;
+  height: 518px;
+  margin-bottom: 12px;
+  background-size: auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-image: url($img_mv);
+  background-color: var(--color-old-white);
 
-    @media (min-width:768px) { 
-    background-image: url($img_desk); 
+  @media (min-width: 768px) {
+    background-image: url($img_desk);
     height: 698px;
-    }
+  }
 }
 
 @mixin background-collection($img_mv, $img_tab, $img_desk) {
-    width: auto;
-    height: 520px;
-    margin-bottom: 12px;
-    background-size: auto;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-image: url($img_mv);
-    background-color: var(--color-old-white);
+  width: auto;
+  height: 520px;
+  margin-bottom: 12px;
+  background-size: auto;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-image: url($img_mv);
+  background-color: var(--color-old-white);
 
-    @media (min-width:768px) { 
-        height: 490px;
-        background-image: url($img_tab);
-    }
+  @media (min-width: 768px) {
+    height: 490px;
+    background-image: url($img_tab);
+  }
 
-    @media (min-width:1068px) { 
-        height: 580px;
-        background-image: url($img_desk);
-    }
+  @media (min-width: 1068px) {
+    height: 580px;
+    background-image: url($img_desk);
+  }
 }
 
 .b-main {
-    background-color: var(--color-background);
+  background-color: var(--color-background);
 
-    &__under-header {
-        height: 88px;
-    }
+  &__under-header {
+    height: 88px;
+  }
 
-    &__ipad {
-        @include background("images/img_header_mv.jpg", "images/img_header.jpg");
-    }
+  &__ipad {
+    @include background("images/img_header_mv.jpg", "images/img_header.jpg");
+  }
 
-    &__iphone {
-        @include background("images/hero_iphone_12_mv.jpg", "images/hero_iphone_12.jpg");
-    }
+  &__iphone {
+    @include background(
+      "images/hero_iphone_12_mv.jpg",
+      "images/hero_iphone_12.jpg"
+    );
+  }
 
-    &__imac {
-        @include background("images/hero_imac_mv.jpg", "images/hero_imac.jpg");
-    }
+  &__imac {
+    @include background("images/hero_imac_mv.jpg", "images/hero_imac.jpg");
+  }
 
-    &__iphone-pro {
-        @include background-collection("images/iphone_12_pro_mv.jpg", "images/iphone_12_pro_tab.jpg", "images/iphone_12_pro.jpg");
-        @media (min-width:768px) { 
-            margin-left: 12px;
-        }
+  &__iphone-pro {
+    @include background-collection(
+      "images/iphone_12_pro_mv.jpg",
+      "images/iphone_12_pro_tab.jpg",
+      "images/iphone_12_pro.jpg"
+    );
+    @media (min-width: 768px) {
+      margin-left: 12px;
     }
+  }
 
-    &__watch {
-        @include background-collection("images/watch_series_mv.jpg", "images/watch_series_tab.jpg", "images/watch_series_desk.jpg");
-        @media (min-width:768px) { 
-            margin-right: 12px;
-        }
+  &__watch {
+    @include background-collection(
+      "images/watch_series_mv.jpg",
+      "images/watch_series_tab.jpg",
+      "images/watch_series_desk.jpg"
+    );
+    @media (min-width: 768px) {
+      margin-right: 12px;
     }
+  }
 
-    &__tv {
-        @include background-collection("images/tv_4k_mv.jpg", "images/tv_4k_tab.jpg", "images/tv_4k_desk.jpg");
-        @media (min-width:768px) { 
-            margin-left: 12px;
-        }
+  &__tv {
+    @include background-collection(
+      "images/tv_4k_mv.jpg",
+      "images/tv_4k_tab.jpg",
+      "images/tv_4k_desk.jpg"
+    );
+    @media (min-width: 768px) {
+      margin-left: 12px;
     }
+  }
 
-    &__trade {
-        @include background-collection("images/promo_tradein_mv.jpg", "images/promo_tradein_tab.jpg", "images/promo_tradein_desk.jpg");
-        @media (min-width:768px) { 
-            margin-right: 12px;
-        }
+  &__trade {
+    @include background-collection(
+      "images/promo_tradein_mv.jpg",
+      "images/promo_tradein_tab.jpg",
+      "images/promo_tradein_desk.jpg"
+    );
+    @media (min-width: 768px) {
+      margin-right: 12px;
     }
+  }
 
-    &__card {
-        @include background-collection("images/card_mv.jpg", "images/card_tab.jpg", "images/card_desk.jpg");
-        @media (min-width:768px) { 
-            margin-left: 12px;
-        }
+  &__card {
+    @include background-collection(
+      "images/card_mv.jpg",
+      "images/card_tab.jpg",
+      "images/card_desk.jpg"
+    );
+    @media (min-width: 768px) {
+      margin-left: 12px;
     }
+  }
 
-    &__fitness {
-        @include background-collection("images/Fitness_mv.jpg", "images/Fitness_tab.jpg", "images/Fitness_desk.jpg");
-        @media (min-width:768px) { 
-            margin-right: 12px;
-        }
+  &__fitness {
+    @include background-collection(
+      "images/Fitness_mv.jpg",
+      "images/Fitness_tab.jpg",
+      "images/Fitness_desk.jpg"
+    );
+    @media (min-width: 768px) {
+      margin-right: 12px;
     }
+  }
 
-    &__link {
-        text-decoration: none;
-    }
+  &__link {
+    text-decoration: none;
+  }
 }

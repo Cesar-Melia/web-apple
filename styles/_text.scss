@@ -1,133 +1,140 @@
 body {
-    font-family: sf-pro;
+  font-family: sf-pro;
 }
 
 .b-text-h2 {
-    font-weight: 700;
-    color: var(--color-text);
-    text-align: center;
-    font-size: 32px;
-    margin: 36px 40px 5px 40px;
+  font-weight: 700;
+  color: var(--color-text);
+  text-align: center;
+  font-size: 32px;
+  margin: 36px 40px 5px 40px;
 
-    ~ h2 {
-        margin: 0 40px 5px 40px;
-    }
+  ~ h2 {
+    margin: 0 40px 5px 40px;
+  }
 
-    @media (min-width:768px) { 
-        font-size: 48px;
-        margin-top: 66px;
-    }
+  @media (min-width: 768px) {
+    font-size: 48px;
+    margin-top: 66px;
+  }
 
-    &--white {
-        color: var(--color-old-white);
-    }
+  &--white {
+    color: var(--color-old-white);
+  }
 
-    &--top36 {
-        font-size: 30px;
-        margin: 36px 40px 0 40px;
-    }
-    
-    &--top10 {
-        font-size: 30px;
-        margin: 10px 40px 0 40px;
-    }
+  &--top36 {
+    font-size: 30px;
+    margin: 36px 40px 0 40px;
+  }
+
+  &--top10 {
+    font-size: 30px;
+    margin: 10px 40px 0 40px;
+  }
 }
 
 .b-text-h3 {
-    font-weight: 400;
-    color: var(--color-text);
-    text-align: center;
+  font-weight: 400;
+  color: var(--color-text);
+  text-align: center;
+  font-size: 18px;
+  margin: 0 40px 0 40px;
+
+  @media (min-width: 768px) {
+    font-size: 23px;
+    margin-top: 0;
+  }
+
+  &--white {
+    color: var(--color-old-white);
+  }
+
+  &--collection {
+    font-size: 19px;
+    margin: 5px 10px 0 10px;
+
+    @media (min-width: 1069px) {
+      font-size: 21px;
+    }
+  }
+
+  &--trade {
     font-size: 18px;
-    margin: 0 40px 0 40px;
+    margin: 5px 10px 0 10px;
 
-    @media (min-width:768px) { 
-        font-size: 23px;
-        margin-top: 0;
+    @media (min-width: 1069px) {
+      font-size: 21px;
     }
-
-    &--white {
-        color: var(--color-old-white);
-    }
-
-    &--collection {
-        font-size: 19px;
-        margin: 5px 10px 0 10px;
-
-        @media (min-width:1069px) { 
-            font-size: 21px;
-        }
-    }
-
-    &--trade {
-        font-size: 18px;
-        margin: 5px 10px 0 10px;
-
-        @media (min-width:1069px) { 
-            font-size: 21px;
-        }
-    }
+  }
 }
 
 .b-text-span {
-    color: var(--color-text);
-    font-size: 14px;
-    text-align: center;
-    
-    ~ span {
-        margin-top: 5px;
-    }
+  color: var(--color-text);
+  font-size: 14px;
+  text-align: center;
 
-    &--gray {
-        color: var(--color-gray);
-    }
-    
-    &--red {
-        color: var(--color-red);
-        font-size: 12px;
-        margin-top: 15px;
-    }
+  ~ span {
+    margin-top: 5px;
+  }
 
-    &--under-header{
-        margin: 58px 40px 10px 40px;
+  &--gray {
+    color: var(--color-gray);
+  }
+
+  &--red {
+    color: var(--color-red);
+    font-size: 12px;
+    margin-top: 15px;
+  }
+
+  &--under-header {
+    margin: 58px 40px 10px 40px;
+  }
+
+  &--main {
+    margin: 15px 40px 0 40px;
+
+    @media (min-width: 768px) {
+      font-size: 16px;
+      margin-top: 20px;
     }
+  }
 
-    &--main {
-        margin: 15px 40px 0 40px;
-
-        @media (min-width:768px) {
-            font-size: 16px;
-            margin-top: 20px;
-        }
+  &--collection {
+    margin: 15px 40px 0 40px;
+    @media (min-width: 768px) {
+      font-size: 16px;
+      margin-top: 20px;
     }
+  }
+}
 
-    &--collection {
-        margin: 15px 40px 0 40px;
-        @media (min-width:768px) {
-            font-size: 16px;
-            margin-top: 20px;
-        }
-    }   
+.b-text-p {
+    text-align: justify;
+    font-size: 12px;
+    color: var(--color-gray);
+
 }
 
 .b-text-link {
-    text-decoration: none;
-    color: var(--color-blue-link);
+  text-decoration: none;
+  color: var(--color-blue-link);
 
-    &:hover {
-        text-decoration: underline;
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &--main {
+    text-align: center;
+    margin: 15px 15px;
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+      margin-top: 20px;
     }
+  }
 
-    &--main {
-        text-align: center;
-        margin: 15px 15px;
-
-        @media (min-width:768px) {
-            font-size: 18px;
-            margin-top: 20px
-        }
-    }
-
-    &--bright-blue {
-        color: var(--color-blue-link2);
-    }
+  &--bright-blue {
+    color: var(--color-blue-link2);
+  }
 }

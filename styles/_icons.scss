@@ -1,43 +1,30 @@
 %icon-prop {
-    text-decoration: none;
-    color:rgb(223, 223, 223);
+  text-decoration: none;
+  color: rgb(223, 223, 223);
 }
 
 .b-icon {
-    
-    &__apple {
-        @extend %icon-prop;
-        font-size: 20px;
-    }
+  &__apple {
+    @extend %icon-prop;
+    font-size: 20px;
+  }
 
-    &__menu {
-        @extend %icon-prop;
-        font-size: 16px;
-    }
+  &__menu {
+    @extend %icon-prop;
+    font-size: 16px;
+  }
 
-    &__search {
-        @extend %icon-prop;
-        font-size: 14px;
-    }
+  &__search {
+    @extend %icon-prop;
+    font-size: 14px;
+  }
 
-    &__bag {
-        @extend %icon-prop;
-        font-size: 16px;
-    }
+  &__bag {
+    @extend %icon-prop;
+    font-size: 16px;
+  }
 
-    &__header-hover:hover {
-        color:rgb(255, 255, 255);
-    }
-}
-
-.b-logo-watch {
-    width: 110px;
-    align-self: center;
-    margin: 30px 0 15px 0;
-}
-
-.b-logo-tv {
-    width: 110px;
-    align-self: center;
-    margin-top: 10px;
+  &__header-hover:hover {
+    color: rgb(255, 255, 255);
+  }
 }
