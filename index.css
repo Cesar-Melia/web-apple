@@ -366,6 +366,7 @@ template {
   --color-transparent-black: rgba(0, 0, 0, 0.8);
   --color-text: #1d1d1f;
   --color-gray: #86868b;
+  --color-gray-med: #d2d2d7;
   --color-light-gray: #f5f5f7;
   --color-old-white: #fbfbfd;
   --color-blue-link: #06c;
@@ -588,6 +589,7 @@ body {
 .b-header {
   position: fixed;
   width: 100%;
+  z-index: 100;
 }
 
 .b-header__nav {
@@ -868,10 +870,12 @@ body {
 .b-footer {
   background-color: var(--color-light-gray);
   line-height: 1.33337;
+  position: relative;
 }
 
 .b-footer__notes {
   margin: 20px 30px;
+  border-bottom: 1px solid var(--color-gray-med);
 }
 
 .b-hidden {

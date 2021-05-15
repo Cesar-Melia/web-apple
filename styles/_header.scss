@@ -1,6 +1,7 @@
 .b-header {
   position: fixed;
   width: 100%;
+  z-index: 100;
 
   &__nav {
     background-color: var(--color-transparent-black);

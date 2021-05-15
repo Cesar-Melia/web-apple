@@ -1,9 +1,12 @@
 .b-footer {
     background-color: var(--color-light-gray);
     line-height: 1.33337;
+    position:relative;
     
     &__notes {
         margin: 20px 30px;
-        
+        border-bottom: 1px solid var(--color-gray-med);
     }
+
+
 }
