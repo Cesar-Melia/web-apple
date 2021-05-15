@@ -5,6 +5,11 @@
         padding: 0 25px 0 25px;
     }
 
+    &__content {
+        width: 100%;
+        max-width: 1040px;
+    }
+
     &__menu {
         color: rgb(223, 223, 223);
         text-decoration: none;
