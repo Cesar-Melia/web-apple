@@ -92,9 +92,12 @@
   }
 
   &__usa {
-    position: absolute;
-    right: 30px;
-    margin-left: 100px;
+    width: 100%;
+    @media (min-width: 768px) {
+        width:fit-content;
+        position: absolute;
+        right: 30px;
+    }
   }
 
   &__link {
@@ -107,6 +110,10 @@
   }
 
   &__privacy {
-    margin: 20px 100px 0 0;
+    margin-top: 20px;
+
+    @media (min-width: 768px) {
+        margin-right: 100px;
+    }
   }
 }

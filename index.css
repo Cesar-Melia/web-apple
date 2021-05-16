@@ -984,9 +984,17 @@ body {
 }
 
 .b-footer__usa {
-  position: absolute;
-  right: 30px;
-  margin-left: 100px;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .b-footer__usa {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    position: absolute;
+    right: 30px;
+  }
 }
 
 .b-footer__link {
@@ -999,7 +1007,13 @@ body {
 }
 
 .b-footer__privacy {
-  margin: 20px 100px 0 0;
+  margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .b-footer__privacy {
+    margin-right: 100px;
+  }
 }
 
 .b-hidden {
