@@ -365,6 +365,7 @@ template {
 :root {
   --color-transparent-black: rgba(0, 0, 0, 0.8);
   --color-text: #1d1d1f;
+  --color-text-footer: #515154;
   --color-gray: #86868b;
   --color-gray-med: #d2d2d7;
   --color-light-gray: #f5f5f7;
@@ -691,6 +692,7 @@ body {
 @media (min-width: 768px) {
   .b-main__iphone-pro {
     height: 490px;
+    margin: 12px 12px 0 12px;
     background-image: url("images/iphone_12_pro_tab.jpg");
   }
 }
@@ -704,7 +706,7 @@ body {
 
 @media (min-width: 768px) {
   .b-main__iphone-pro {
-    margin-left: 12px;
+    margin-right: 6px;
   }
 }
 
@@ -722,6 +724,7 @@ body {
 @media (min-width: 768px) {
   .b-main__watch {
     height: 490px;
+    margin: 12px 12px 0 12px;
     background-image: url("images/watch_series_tab.jpg");
   }
 }
@@ -735,7 +738,7 @@ body {
 
 @media (min-width: 768px) {
   .b-main__watch {
-    margin-right: 12px;
+    margin-left: 6px;
   }
 }
 
@@ -753,6 +756,7 @@ body {
 @media (min-width: 768px) {
   .b-main__tv {
     height: 490px;
+    margin: 12px 12px 0 12px;
     background-image: url("images/tv_4k_tab.jpg");
   }
 }
@@ -766,7 +770,7 @@ body {
 
 @media (min-width: 768px) {
   .b-main__tv {
-    margin-left: 12px;
+    margin-right: 6px;
   }
 }
 
@@ -784,6 +788,7 @@ body {
 @media (min-width: 768px) {
   .b-main__trade {
     height: 490px;
+    margin: 12px 12px 0 12px;
     background-image: url("images/promo_tradein_tab.jpg");
   }
 }
@@ -797,7 +802,7 @@ body {
 
 @media (min-width: 768px) {
   .b-main__trade {
-    margin-right: 12px;
+    margin-left: 6px;
   }
 }
 
@@ -815,6 +820,7 @@ body {
 @media (min-width: 768px) {
   .b-main__card {
     height: 490px;
+    margin: 12px 12px 0 12px;
     background-image: url("images/card_tab.jpg");
   }
 }
@@ -828,7 +834,7 @@ body {
 
 @media (min-width: 768px) {
   .b-main__card {
-    margin-left: 12px;
+    margin-right: 6px;
   }
 }
 
@@ -846,6 +852,7 @@ body {
 @media (min-width: 768px) {
   .b-main__fitness {
     height: 490px;
+    margin: 12px 12px 0 12px;
     background-image: url("images/Fitness_tab.jpg");
   }
 }
@@ -859,7 +866,7 @@ body {
 
 @media (min-width: 768px) {
   .b-main__fitness {
-    margin-right: 12px;
+    margin-left: 6px;
   }
 }
 
@@ -869,13 +876,78 @@ body {
 
 .b-footer {
   background-color: var(--color-light-gray);
-  line-height: 1.33337;
   position: relative;
 }
 
 .b-footer__notes {
-  margin: 20px 30px;
+  margin: 20px 10px;
+  line-height: 1.33337;
   border-bottom: 1px solid var(--color-gray-med);
+  max-width: 1040px;
+}
+
+@media (min-width: 768px) {
+  .b-footer__sm-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (min-width: 768px) {
+  .b-footer__col {
+    width: 20%;
+    margin: 0;
+  }
+}
+
+.b-footer__nav {
+  color: var(--color-text);
+  text-decoration: none;
+  line-height: 1.33337;
+  font-size: 13px;
+  margin: 10px 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--color-gray-med);
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .b-footer__nav {
+    font-size: 12px;
+    color: var(--color-text-footer);
+    margin: 0 10px;
+    padding-bottom: 10px;
+    border-bottom: 0px;
+    display: inline-block;
+  }
+}
+
+.b-footer__nav:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .b-footer__bold-sm {
+    font-size: 13px;
+    font-weight: bold;
+    color: var(--color-text);
+  }
+  .b-footer__bold-sm ~ .b-footer__bold-sm {
+    margin-top: 20px;
+  }
+}
+
+.b-footer__bold-sm:hover {
+  text-decoration: none;
+}
+
+.b-footer__under-menu {
+  margin: 10px 10px;
 }
 
 .b-hidden {
